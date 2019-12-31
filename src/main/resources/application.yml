@@ -1,0 +1,6 @@
+# 设置国际化
+spring:
+    application:
+        name: chenxi stock
+    profiles:
+        active: prod

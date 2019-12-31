@@ -1,0 +1,111 @@
+server:
+    port: 8189
+    servlet:
+        context-path: /demo
+
+modeulelist:
+    modeuls:
+        - moduleId: Setup
+          moduleName: 安装
+          menus:
+            - menuid: SetupMgr
+              menuname:
+              Url: setup/index.html
+        - moduleId: Help
+          moduleName: 帮助
+          menus:
+            - menuid: HelpMgr
+              menuname:
+              Url: help.html
+        - moduleId: ClientDownload
+          moduleName: 下载
+          menus:
+            - menuid: ClientDownloadMgr
+              menuname:
+              Url: download.html
+        - moduleId: CloudComputing
+          moduleName: 云计算
+          menus:
+            -  menuid: CloudComputingMgr
+               menuname: 云计算管理平台
+               Url: openstack.html
+               extLink: http://192.168.1.23/dashboard/
+            -  menuid: CloudComputingMonitor
+               menuname: 云计算监控平台
+               Url: http://192.168.1.24:3000/d/gBqMwDTiz/openstack-clouds?orgId=1
+        - moduleId: CloudStorage
+          moduleName: 云存储
+          menus:
+            - menuid: CloudStorageMgr
+              menuname: 云存储管理平台
+              Url: ceph.html
+              extLink: http://192.168.1.25/openattic
+            - menuid: CloudStorageMonitor
+              menuname: 云存储监控平台
+              Url: http://192.168.1.25:3000/d/vwcB0Bzmk/ceph-cluster?orgId=1
+            - menuid: CloudStorageMonitor
+              menuname: 服务器监控平台
+              Url: http://192.168.1.25:3000/d/9CWBz0bik/1-node-exporter-for-prometheus-dashboard-zhong-wen-ban-update-1102?orgId=1
+        - moduleId: MicroSvc
+          moduleName: 微服务
+          menus:
+            - menuid: MicroSvcMgr
+              menuname: 微服务管理平台
+              Url: https://192.168.1.28:30000/
+            - menuid: MicroSvcMonitor
+              menuname: 微服务监控平台
+              Url: http://192.168.1.28:41013/dashboard/db/kubernetes-cluster-monitoring-via-prometheus?refresh=10s&orgId=1
+        - moduleId: BigDate
+          moduleName: 大数据
+          menus:
+            - menuid: BigDateMgr
+              menuname: 大数据管理平台
+              Url: bigdata.html
+            - menuid: BigDateMonitor
+              menuname: 大数据监控平台
+              Url: bigdatamonitor.html
+        - moduleId: Hyperledger
+          moduleName: 区块链
+          menus:
+            - menuid: HyperledgerMgr
+              menuname: 区块链管理平台
+              Url: hyperledger.html
+            - menuid: HyperledgerMonitor
+              menuname: 区块链监控平台
+              Url: hyperledgerMonitor.html
+        - moduleId: IOT
+          moduleName: 物联网
+          menus:
+            - menuid: IOTMgr
+              menuname: 物联网管理平台
+              Url: kaa.html
+            - menuid: IOTMonitor
+              menuname: 物联网监控平台
+              Url: kaamonitor.html
+        - moduleId: AI
+          moduleName: 人工智能
+          menus:
+            - menuid: AIMgr
+              menuname: 人工智能管理平台
+              Url: ai.html
+            - menuid: IOTMonitor
+              menuname: 人工智能监控平台
+              Url: aimonitor.html
+        - moduleId: Log
+          moduleName: 日志
+          menus:
+            - menuid: LogMgr
+              menuname: 日志汇总
+              Url: logmgr.html
+            - menuid: LogMonitor
+              menuname: 日志监控
+              Url: logadv.html
+        - moduleId: Backup
+          moduleName: 容灾备份
+          menus:
+            - menuid: BackupMgr
+              menuname: 容灾备份管理
+              Url: backup/backup.html
+            - menuid: BackupMonitor
+              menuname: 容灾备份监控
+              Url: backup/status.html
