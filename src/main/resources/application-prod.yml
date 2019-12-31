@@ -1,5 +1,5 @@
 server:
-    port: 8189
+    port: 8188
     servlet:
         context-path: /demo
 
@@ -78,10 +78,10 @@ modeulelist:
           menus:
             - menuid: IOTMgr
               menuname: 物联网管理平台
-              Url: kaa.html
+              Url: thingBoead.html
             - menuid: IOTMonitor
               menuname: 物联网监控平台
-              Url: kaamonitor.html
+              Url: thingBoeadmonitor.html
         - moduleId: AI
           moduleName: 人工智能
           menus:
