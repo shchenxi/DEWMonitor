@@ -3,4 +3,4 @@ spring:
     application:
         name: chenxi stock
     profiles:
-        active: prod
+        active: web

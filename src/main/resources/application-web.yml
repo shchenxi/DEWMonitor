@@ -28,10 +28,10 @@ modeulelist:
       menus:
         -  menuid: CloudComputingMgr
            menuname: 云计算管理平台
-           Url: openstack.html
+           Url: openstack/OpenStacklogin.html
         -  menuid: CloudComputingMonitor
            menuname: 云计算监控平台
-           Url: openstackmonitor.html
+           Url: openstack/OpenstackcloudsGrafana.html
     - moduleId: CloudStorage
       moduleName: 云存储
       menus:
