@@ -76,10 +76,10 @@ modeulelist:
       menus:
         - menuid: IOTMgr
           menuname: 物联网管理平台
-          Url: kaa.html
+          Url: thingsboard/ThingsBoardlogin.html
         - menuid: IOTMonitor
           menuname: 物联网监控平台
-          Url: kaamonitor.html
+          Url: thingsboard/ThingsBoardwidgets-bundles.html
     - moduleId: AI
       moduleName: 人工智能
       menus:
