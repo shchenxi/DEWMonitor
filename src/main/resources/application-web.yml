@@ -49,10 +49,10 @@ modeulelist:
       menus:
         - menuid: MicroSvcMgr
           menuname: 微服务管理平台
-          Url: Kubernetes/KubernetesDashboardoverview.html
+          Url: kubernetes/KubernetesDashboardoverview.html
         - menuid: MicroSvcMonitor
           menuname: 微服务监控平台
-          Url: Kubernetes/KubernetesGrafanaMonitoring.html
+          Url: kubernetes/KubernetesGrafanaMonitoring.html
     - moduleId: BigDate
       moduleName: 大数据
       menus:
