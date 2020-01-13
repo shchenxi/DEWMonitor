@@ -5,7 +5,7 @@
 --><meta charset=utf-8><style>md-icon.md-default-theme{color:rgba(0,0,0,0.54)}md-toolbar.md-default-theme:not(.md-menu-toolbar),md-toolbar:not(.md-menu-toolbar){background-color:rgb(0,105,92);color:rgb(255,255,255)}md-toolbar.md-default-theme:not(.md-menu-toolbar) md-icon,md-toolbar:not(.md-menu-toolbar) md-icon{color:rgb(255,255,255);fill:rgb(255,255,255)}md-progress-circular.md-default-theme.md-accent path{stroke:rgb(255,110,64)}md-progress-circular.md-default-theme.md-warn path{stroke:rgb(255,87,34)}md-progress-linear.md-default-theme.md-warn .md-container{background-color:rgb(255,204,188)}.md-button.md-default-theme:not([disabled]).md-focused,.md-button:not([disabled]).md-focused,.md-button.md-default-theme:not([disabled]):hover,.md-button:not([disabled]):hover{background-color:rgba(158,158,158,0.2)}.md-button.md-default-theme:not([disabled]).md-icon-button:hover,.md-button:not([disabled]).md-icon-button:hover{background-color:transparent}md-content.md-default-theme{color:rgba(0,0,0,0.87)}md-menu-content{background-color:rgb(255,255,255)}md-sidenav.md-default-theme{background-color:rgb(255,255,255)}html{color:rgba(0,0,0,0.87);background-color:rgb(250,250,250)}[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none!important}</style>
 <title ng-bind=pageTitle class=ng-binding>ThingsBoard PE | 部件库</title>
 <meta http-equiv="Cache-control" content="no-cache">
-<meta http-equiv="Cache" content="no-cache"
+<meta http-equiv="Cache" content="no-cache">
 <meta http-equiv=X-UA-Compatible content="IE=edge">
 <meta name=description content>
 <meta name=viewport content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -32,42 +32,42 @@
 </span></a></tb-menu-link>
  <li ng-if=showSection(section) ng-repeat="section in sections" class="parent-list-item ng-scope" ng-class="{'parentActive' : isOpen(section)}"> 
  <tb-menu-link section=section class=ng-isolate-scope>
-<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.ruleChains href="">
+<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.ruleChains href="ThingsBoardRuleChains.html">
  
  <md-icon ng-if="!section.iconUrl &amp;&amp; section.icon" aria-label=settings_ethernet class="material-icons ng-binding ng-scope md-default-theme" role=img>settings_ethernet</md-icon><span class="ng-binding ng-scope">
  规则链库
 </span></a></tb-menu-link>
  <li ng-if=showSection(section) ng-repeat="section in sections" class="parent-list-item ng-scope" ng-class="{'parentActive' : isOpen(section)}"> 
  <tb-menu-link section=section class=ng-isolate-scope>
-<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.converters href="">
+<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.converters href="ThingsBoardConverters.html">
  
  <md-icon ng-if="!section.iconUrl &amp;&amp; section.icon" aria-label=transform class="material-icons ng-binding ng-scope md-default-theme" role=img>transform</md-icon><span class="ng-binding ng-scope">
  Data converters
 </span></a></tb-menu-link>
  <li ng-if=showSection(section) ng-repeat="section in sections" class="parent-list-item ng-scope" ng-class="{'parentActive' : isOpen(section)}"> 
  <tb-menu-link section=section class=ng-isolate-scope>
-<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.integrations href="">
+<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.integrations href="ThingsBoardIntegrations.html">
  
  <md-icon ng-if="!section.iconUrl &amp;&amp; section.icon" aria-label=input class="material-icons ng-binding ng-scope md-default-theme" role=img>input</md-icon><span class="ng-binding ng-scope">
  Integrations
 </span></a></tb-menu-link>
  <li ng-if=showSection(section) ng-repeat="section in sections" class="parent-list-item ng-scope" ng-class="{'parentActive' : isOpen(section)}"> 
  <tb-menu-link section=section class=ng-isolate-scope>
-<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.roles href="">
+<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.roles href="ThingsBoardRoles.html">
  
  <md-icon ng-if="!section.iconUrl &amp;&amp; section.icon" aria-label=security class="material-icons ng-binding ng-scope md-default-theme" role=img>security</md-icon><span class="ng-binding ng-scope">
  Roles
 </span><div class=md-ripple-container></div></a></tb-menu-link>
  <li ng-if=showSection(section) ng-repeat="section in sections" class="parent-list-item ng-scope" ng-class="{'parentActive' : isOpen(section)}"> 
  <tb-menu-link section=section class=ng-isolate-scope>
-<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.customers-hierarchy href="">
+<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.customers-hierarchy href="ThingsBoardCustomershierarchy.html">
  
  <md-icon ng-if="!section.iconUrl &amp;&amp; section.icon" aria-label=sort class="material-icons ng-binding ng-scope md-default-theme" role=img>sort</md-icon><span class="ng-binding ng-scope">
  Customers hierarchy
 </span></a></tb-menu-link>
  <li ng-if=showSection(section) ng-repeat="section in sections" class="parent-list-item ng-scope" ng-class="{'parentActive' : isOpen(section)}"> 
  <tb-menu-link section=section class=ng-isolate-scope>
-<a class="md-button-toggle md-button ng-scope md-default-theme md-ink-ripple layout-row" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.userGroups aria-controls=docs-menu-entity-group.user-groups layout=row aria-expanded=false href="">
+<a class="md-button-toggle md-button ng-scope md-default-theme md-ink-ripple layout-row" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.userGroups aria-controls=docs-menu-entity-group.user-groups layout=row aria-expanded=false href="ThingsBoardUsergroup.html">
  
  <md-icon ng-if="!section.iconUrl &amp;&amp; section.icon" aria-label=account_circle class="material-icons ng-binding ng-scope md-default-theme" role=img>account_circle</md-icon>
  <span flex class="ng-binding ng-scope flex">User groups</span>
@@ -100,7 +100,7 @@
 </tb-menu-link>
  <li ng-if=showSection(section) ng-repeat="section in sections" class="parent-list-item ng-scope" ng-class="{'parentActive' : isOpen(section)}"> 
  <tb-menu-link section=section class=ng-isolate-scope>
-<a class="md-button-toggle md-button ng-scope md-default-theme md-ink-ripple layout-row" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.customerGroups aria-controls=docs-menu-entity-group.customer-groups layout=row aria-expanded=false href="">
+<a class="md-button-toggle md-button ng-scope md-default-theme md-ink-ripple layout-row" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.customerGroups aria-controls=docs-menu-entity-group.customer-groups layout=row aria-expanded=false href="ThingsBoardCustomergroup.html">
  
  <md-icon ng-if="!section.iconUrl &amp;&amp; section.icon" aria-label=supervisor_account class="material-icons ng-binding ng-scope md-default-theme" role=img>supervisor_account</md-icon>
  <span flex class="ng-binding ng-scope flex">Customer groups</span>
@@ -143,7 +143,7 @@
 </tb-menu-link>
  <li ng-if=showSection(section) ng-repeat="section in sections" class="parent-list-item ng-scope" ng-class="{'parentActive' : isOpen(section)}"> 
  <tb-menu-link section=section class=ng-isolate-scope>
-<a class="md-button-toggle md-button ng-scope md-default-theme md-ink-ripple layout-row" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.entityViewGroups aria-controls=docs-menu-entity-group.entity-view-groups layout=row aria-expanded=false href="">
+<a class="md-button-toggle md-button ng-scope md-default-theme md-ink-ripple layout-row" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.entityViewGroups aria-controls=docs-menu-entity-group.entity-view-groups layout=row aria-expanded=false href="ThingsBoardEntityViewGroups.html">
  
  <md-icon ng-if="!section.iconUrl &amp;&amp; section.icon" aria-label=view_quilt class="material-icons ng-binding ng-scope md-default-theme" role=img>view_quilt</md-icon>
  <span flex class="ng-binding ng-scope flex">Entity view groups</span>
@@ -162,7 +162,7 @@
 </span><div class=md-ripple-container></div></a></tb-menu-link>
  <li ng-if=showSection(section) ng-repeat="section in sections" class="parent-list-item ng-scope" ng-class="{'parentActive' : isOpen(section)}"> 
  <tb-menu-link section=section class=ng-isolate-scope>
-<a class="md-button-toggle md-button ng-scope md-default-theme md-ink-ripple layout-row" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.dashboardGroups aria-controls=docs-menu-entity-group.dashboard-groups layout=row aria-expanded=false href="">
+<a class="md-button-toggle md-button ng-scope md-default-theme md-ink-ripple layout-row" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.dashboardGroups aria-controls=docs-menu-entity-group.dashboard-groups layout=row aria-expanded=false href="ThingsBoardDashboardGroups.html">
  
  <md-icon ng-if="!section.iconUrl &amp;&amp; section.icon" aria-label=dashboard class="material-icons ng-binding ng-scope md-default-theme" role=img>dashboard</md-icon>
  <span flex class="ng-binding ng-scope flex">Dashboard groups</span>
@@ -174,14 +174,14 @@
 </tb-menu-link>
  <li ng-if=showSection(section) ng-repeat="section in sections" class="parent-list-item ng-scope" ng-class="{'parentActive' : isOpen(section)}"> 
  <tb-menu-link section=section class=ng-isolate-scope>
-<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.scheduler href="">
+<a class="md-button-link md-button ng-scope md-default-theme md-ink-ripple" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.scheduler href="ThingsBoardScheduler.html">
  
  <md-icon ng-if="!section.iconUrl &amp;&amp; section.icon" aria-label=schedule class="material-icons ng-binding ng-scope md-default-theme" role=img>schedule</md-icon><span class="ng-binding ng-scope">
  Scheduler
 </span></a></tb-menu-link>
  <li ng-if=showSection(section) ng-repeat="section in sections" class="parent-list-item ng-scope" ng-class="{'parentActive' : isOpen(section)}"> 
  <tb-menu-link section=section class=ng-isolate-scope>
-<a class="md-button-toggle md-button ng-scope md-default-theme md-ink-ripple layout-row" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.settings aria-controls=docs-menu-white-labeling.white-labeling layout=row aria-expanded=false href="">
+<a class="md-button-toggle md-button ng-scope md-default-theme md-ink-ripple layout-row" ng-transclude ui-sref-active-eq=tb-active ui-sref=home.settings aria-controls=docs-menu-white-labeling.white-labeling layout=row aria-expanded=false href="ThingsBoardCustomTranslation.html">
  
  <md-icon ng-if="!section.iconUrl &amp;&amp; section.icon" aria-label=format_paint class="material-icons ng-binding ng-scope md-default-theme" role=img>format_paint</md-icon>
  <span flex class="ng-binding ng-scope flex">White Labeling</span>
