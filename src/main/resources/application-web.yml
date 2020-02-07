@@ -58,10 +58,10 @@ modeulelist:
       menus:
         - menuid: BigDateMgr
           menuname: 大数据管理平台
-          Url: bigdata.html
+          Url: ambari/Ambarilogin.html
         - menuid: BigDateMonitor
           menuname: 大数据监控平台
-          Url: bigdatamonitor.html
+          Url: ambari/Ambaridashboardmetrics.html
     - moduleId: Hyperledger
       moduleName: 区块链
       menus:
