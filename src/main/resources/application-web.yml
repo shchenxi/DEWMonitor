@@ -10,7 +10,7 @@ modeulelist:
       menus:
         - menuid: SetupMgr
           menuname:
-          Url: setup/index.html
+          Url: setup/AmbariclusterInformation.html
     - moduleId: Help
       moduleName: 帮助
       menus:
