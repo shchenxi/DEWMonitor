@@ -1,6 +1,6 @@
 # 设置国际化
 spring:
     application:
-        name: chenxi stock
+        name: chenxi dewmonitor
     profiles:
         active: web
