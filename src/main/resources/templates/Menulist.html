@@ -42,6 +42,44 @@
 	}
 
 
+	 .box{
+		 font-size: 20px;
+		 color:#1787a5;
+		 margin: 10px;
+		 animation: changeshadow 1.5s  ease-in  infinite ;
+		 /* 其它浏览器兼容性前缀 */
+		 -webkit-animation: changeshadow 1.5s linear infinite;
+		 -moz-animation: changeshadow 1.5s linear infinite;
+		 -ms-animation: changeshadow 1.5s linear infinite;
+		 -o-animation: changeshadow 1.5s linear infinite;
+	 }
+	@keyframes changeshadow {
+		0%{ text-shadow: 0 0 4px #1787a5}
+		50%{ text-shadow: 0 0 40px #1787a5}
+		100%{ text-shadow: 0 0 4px #1787a5}
+	}
+	/* 添加兼容性前缀 */
+	@-webkit-keyframes changeshadow {
+		0%{ text-shadow: 0 0 4px #1787a5}
+		50%{ text-shadow: 0 0 40px #1787a5}
+		100%{ text-shadow: 0 0 4px #1787a5}
+	}
+	@-moz-keyframes changeshadow {
+		0%{ text-shadow: 0 0 4px #1787a5}
+		50%{ text-shadow: 0 0 40px #1787a5}
+		100%{ text-shadow: 0 0 4px #1787a5}
+	}
+	@-ms-keyframes changeshadow {
+		0%{ text-shadow: 0 0 4px #1787a5}
+		50%{ text-shadow: 0 0 40px #1787a5}
+		100%{ text-shadow: 0 0 4px #1787a5}
+	}
+	@-o-keyframes changeshadow {
+		0%{ text-shadow: 0 0 4px #1787a5}
+		50%{ text-shadow: 0 0 40px #1787a5}
+		100%{ text-shadow: 0 0 4px #1787a5}
+	}
+
 </style>
 
 </head>
@@ -69,7 +107,11 @@
 				</div>
 				<div class="col-xl-3 col-lg-3">
 					<div class="text-center" >
-						<img src="images/new1.gif" alt=""><a href="http://microraindrop.com/diyudemo/" title="滴雨科技综合应用DEMO" style="color: #24130c" target="_blank">滴雨科技综合应用DEMO</a>
+						<a href="http://microraindrop.com/diyudemo/" title="滴雨科技综合应用DEMO" style="color: #24130c" target="_blank">
+							<span class="box">
+								滴雨科技综合应用DEMO
+							</span>
+						</a>
 					</div>
 				</div>
 

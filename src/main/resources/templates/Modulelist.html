@@ -5,10 +5,102 @@
     <link href="images/dew_html.png" rel="SHORTCUT ICON" />
     <title> [(${module.moduleName})]</title>
     <!-- Loading Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
-    <link href="css/iconfont-style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/iconfont-style.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .navbar .nav li a {
+        display: block;
+        font-size: 16px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 15px;
+        text-decoration: none;
+        outline: none;
+        background: inherit;
+        color: #7867fa;
+        }
+
+
+        .boxselect{
+            font-size: 20px;
+            color:#5cb85c;
+            margin: 10px;
+            animation: changeshadow1 2s  ease-in  infinite ;
+            /* 其它浏览器兼容性前缀 */
+            -webkit-animation: changeshadow1 2s linear infinite;
+            -moz-animation: changeshadow1 2s linear infinite;
+            -ms-animation: changeshadow1 2s linear infinite;
+            -o-animation: changeshadow1 2s linear infinite;
+        }
+        @keyframes changeshadow1 {
+            0%{ text-shadow: 0 0 4px #5cb85c}
+            50%{ text-shadow: 0 0 40px #5cb85c}
+            100%{ text-shadow: 0 0 4px #5cb85c}
+        }
+        /* 添加兼容性前缀 */
+        @-webkit-keyframes changeshadow1 {
+            0%{ text-shadow: 0 0 4px #5cb85c}
+            50%{ text-shadow: 0 0 40px #5cb85c}
+            100%{ text-shadow: 0 0 4px #5cb85c}
+        }
+        @-moz-keyframes changeshadow1 {
+            0%{ text-shadow: 0 0 4px #5cb85c}
+            50%{ text-shadow: 0 0 40px #5cb85c}
+            100%{ text-shadow: 0 0 4px #5cb85c}
+        }
+        @-ms-keyframes changeshadow1 {
+            0%{ text-shadow: 0 0 4px #5cb85c}
+            50%{ text-shadow: 0 0 40px #5cb85c}
+            100%{ text-shadow: 0 0 4px #5cb85c}
+        }
+        @-o-keyframes changeshadow1 {
+            0%{ text-shadow: 0 0 4px #5cb85c}
+            50%{ text-shadow: 0 0 40px #5cb85c}
+            100%{ text-shadow: 0 0 4px #5cb85c}
+        }
+
+         .box{
+             font-size: 20px;
+             color:#7867fa;
+             margin: 10px;
+             animation: changeshadow 2s  ease-in  infinite ;
+             /* 其它浏览器兼容性前缀 */
+             -webkit-animation: changeshadow 2s linear infinite;
+             -moz-animation: changeshadow 2s linear infinite;
+             -ms-animation: changeshadow 2s linear infinite;
+             -o-animation: changeshadow 2s linear infinite;
+         }
+        @keyframes changeshadow {
+            0%{ text-shadow: 0 0 4px #7867fa}
+            50%{ text-shadow: 0 0 40px #7867fa}
+            100%{ text-shadow: 0 0 4px #7867fa}
+        }
+        /* 添加兼容性前缀 */
+        @-webkit-keyframes changeshadow {
+            0%{ text-shadow: 0 0 4px #7867fa}
+            50%{ text-shadow: 0 0 40px #7867fa}
+            100%{ text-shadow: 0 0 4px #7867fa}
+        }
+        @-moz-keyframes changeshadow {
+            0%{ text-shadow: 0 0 4px #7867fa}
+            50%{ text-shadow: 0 0 40px #7867fa}
+            100%{ text-shadow: 0 0 4px #7867fa}
+        }
+        @-ms-keyframes changeshadow {
+            0%{ text-shadow: 0 0 4px #7867fa}
+            50%{ text-shadow: 0 0 40px #7867fa}
+            100%{ text-shadow: 0 0 4px #7867fa}
+        }
+        @-o-keyframes changeshadow {
+            0%{ text-shadow: 0 0 4px #7867fa}
+            50%{ text-shadow: 0 0 40px #7867fa}
+            100%{ text-shadow: 0 0 4px #7867fa}
+        }
+
+    </style>
 </head>
 <body>
 
@@ -31,20 +123,19 @@
                     </div>
                 </div>
                 <div class="col-md-5 text-left">
-                    <div class="collapse navbar-collapse navMenuCollapse">
-                        <ul class="nav">
-                            <li data-selector="nav li" th:each="menu:${module.menus}" >
-
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li th:each="menu:${module.menus}" >
                                 <div th:switch="${menu.extLink == null}">
                                     <p th:case="true">
-                                        <a th:href="${menu.url}" target="content" ><span th:text="${menu.menuName}" /> </a>
+                                        <a th:href="${menu.url}" target="content" ><span class="box" th:text="${menu.menuName}" /> </a>
                                     </p>
-                                    <p th:case="*">
-                                        <a th:href="${menu.extLink}" target="_self" ><span th:text="${menu.menuName}" /> </a>
-                                    </p>
+                                <p th:case="*">
+                                    <a th:href="${menu.extLink}" target="_self" ><span class="box"  th:text="${menu.menuName}" /> </a>
+                                </p>
                                 </div>
                             </li>
-                            <li data-selector="nav li"><a href="./Menulist" >返回</a></li>
+                            <li ><div> <p> <a href="./Menulist" ><span class="box" >返回</span></a></p> </div></li>
                         </ul>
                     </div>
                 </div>
@@ -60,5 +151,21 @@
 </section>
 </body>
 </html>
+
+<script src="scripts/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+
+    $(".navbar-nav>li:first").children("div").children("p").children("a").children("span").attr({'class':'boxselect'});
+
+    $('.navbar-nav>li').click(function(){
+        $('.navbar-nav>li').each(function(key,val){
+            $(val).children("div").children("p").children("a").children("span").attr({'class':'box'});
+        })
+        $(this).children("div").children("p").children("a").children("span").attr({'class':'boxselect'});
+    })
+
+
+
+</script>
 
 
