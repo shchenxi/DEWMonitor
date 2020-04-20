@@ -14,12 +14,15 @@ modeulelist:
     - moduleId: Help
       moduleName: 帮助
       menus:
-        - menuid: HelpMgr
-          menuname: 平台系统功能DEMO示意图
+        - menuid: HelpFun
+          menuname: 平台系统功能图
           Url: helpfunction.html
-        - menuid: HelpMgr
-          menuname: 综合应用DEMO示意图
-          Url: helpdemo.html
+        - menuid: HelpApplication
+          menuname: 综合应用示意图
+          Url: helpapplication.html
+        - menuid: HelpFramework
+          menuname: 软件架构示意图
+          Url: helpframework.html
     - moduleId: ClientDownload
       moduleName: 下载
       menus:
