@@ -16,8 +16,10 @@ public class WebController {
     private Modules modules;
 
     @RequestMapping("/Menulist")
-    public String Menulist()
+    public String Menulist(Model model)
     {
+        model.addAttribute("atarget", modules.getTarget());
+        System.out.println("atarget:" + modules.getTarget());
         return "Menulist";
     }
 

@@ -1,9 +1,10 @@
 server:
-    port: 8188
-    servlet:
-        context-path: /demo
+  port: 8188
+  servlet:
+      context-path: /demo
 
 modeulelist:
+  target: _self
   modeuls:
     - moduleId: Setup
       moduleName: 安装

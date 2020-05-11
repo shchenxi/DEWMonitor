@@ -8,6 +8,17 @@ import java.util.List;
 @Configuration
 @ConfigurationProperties(prefix="modeulelist")
 public class Modules {
+
+	public String getTarget() {
+		return target;
+	}
+
+	public void setTarget(String target) {
+		this.target = target;
+	}
+
+	public String target;
+
 	public List<Module> getModeuls() {
 		return modeuls;
 	}
