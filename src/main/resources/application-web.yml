@@ -74,7 +74,7 @@ modeulelist:
       menus:
         - menuid: HyperledgerMgr
           menuname: 区块链管理平台
-          Url: hyperledger.html
+          Url: hyperledgerexplorer/HyperledgerExplorerdashboard.html
         - menuid: HyperledgerMonitor
           menuname: 区块链监控平台
           Url: hyperledgerMonitor.html

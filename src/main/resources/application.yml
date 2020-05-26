@@ -3,4 +3,4 @@ spring:
     application:
         name: chenxi dewmonitor
     profiles:
-        active: prod
+        active: web
