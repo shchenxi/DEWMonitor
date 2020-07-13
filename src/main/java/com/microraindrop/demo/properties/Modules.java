@@ -19,6 +19,8 @@ public class Modules {
 
 	public String target;
 
+
+
 	public List<Module> getModeuls() {
 		return modeuls;
 	}
@@ -28,5 +30,16 @@ public class Modules {
 	}
 
 	private List<Module> modeuls;
+
+
+	public String getDemoUrl() {
+		return demoUrl;
+	}
+
+	public void setDemoUrl(String demoUrl) {
+		this.demoUrl = demoUrl;
+	}
+
+	private String demoUrl;
 
 }

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.microraindrop</groupId>
-    <artifactId>Demo</artifactId>
+    <artifactId>dewmonitor</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -55,6 +55,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
+                </configuration>
             </plugin>
         </plugins>
     </build>

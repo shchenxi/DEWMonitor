@@ -40,4 +40,15 @@ public class Menu {
 
     private String extLink;
 
+
+    public Boolean getAutoJmp() {
+        return autoJmp;
+    }
+
+    public void setAutoJmp(Boolean autoJmp) {
+        this.autoJmp = autoJmp;
+    }
+
+    private Boolean autoJmp;
+
 }

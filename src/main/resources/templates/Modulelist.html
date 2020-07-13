@@ -130,9 +130,14 @@
                                     <p th:case="true">
                                         <a th:href="${menu.url}" target="content" ><span class="box" th:text="${menu.menuName}" /> </a>
                                     </p>
-                                <p th:case="*">
-                                    <a th:href="${menu.extLink}" target="_self" ><span class="box"  th:text="${menu.menuName}" /> </a>
-                                </p>
+                                    <p th:case="*">
+                                        <a th:href="${menu.extLink}" target="_self" ><span class="box"  th:text="${menu.menuName}" /> </a>
+                                    </p>
+                                </div>
+                                <div th:switch="${menu.autoJmp == true}">
+                                    <p th:case="true">
+                                        <p th:id="menuautoJmp" hidden th:text="${menu.extLink}"></p>
+                                    </p>
                                 </div>
                             </li>
                             <li ><div> <p> <a href="./Menulist" ><span class="box" >返回</span></a></p> </div></li>
@@ -155,6 +160,9 @@
 <script src="scripts/jquery-1.11.2.min.js"></script>
 <script type="text/javascript">
 
+
+    var t
+
     $(".navbar-nav>li:first").children("div").children("p").children("a").children("span").attr({'class':'boxselect'});
 
     $('.navbar-nav>li').click(function(){
@@ -162,8 +170,18 @@
             $(val).children("div").children("p").children("a").children("span").attr({'class':'box'});
         })
         $(this).children("div").children("p").children("a").children("span").attr({'class':'boxselect'});
+        if(t != null)
+        {
+            clearTimeout(t)
+        }
     })
 
+    var jumpurl=$("#menuautoJmp").text();
+    // 以下方式定时跳转
+    if(jumpurl.length>0)
+    {
+        t = setTimeout("javascript:location.href='" + jumpurl  + "'", 3000);
+    }
 </script>
 
 
