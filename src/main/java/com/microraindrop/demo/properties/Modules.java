@@ -19,7 +19,15 @@ public class Modules {
 
 	public String target;
 
+	public Elk getElk() {
+		return elk;
+	}
 
+	public void setElk(Elk elk) {
+		this.elk = elk;
+	}
+
+	private Elk elk;
 
 	public List<Module> getModeuls() {
 		return modeuls;

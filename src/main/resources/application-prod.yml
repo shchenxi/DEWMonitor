@@ -6,6 +6,10 @@ server:
 modeulelist:
   target: _blank
   demoUrl: http://192.168.1.10:8088/diyudemo
+  elk:
+    logstashUrl:
+    elasticUrl: http://192.168.1.50:9000/#/overview?host=http:%2F%2F192.168.1.50:9200
+    kibanaUrl: http://192.168.1.50:5601/
   modeuls:
       - moduleId: Setup
         moduleName: 安装
@@ -118,7 +122,7 @@ modeulelist:
             Url: logmgr.html
           - menuid: LogMonitor
             menuname: 日志监控
-            Url: logadv.html
+            Url: ./elkList
       - moduleId: Backup
         moduleName: 容灾备份
         menus:

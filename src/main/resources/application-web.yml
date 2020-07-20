@@ -6,6 +6,10 @@ server:
 modeulelist:
   target: _self
   demoUrl: http://microraindrop.com/diyudemo/
+  elk:
+    logstashUrl:
+    elasticUrl:
+    kibanaUrl:
   modeuls:
     - moduleId: Setup
       moduleName: 安装
