@@ -31,41 +31,85 @@
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
    <body>
 
-   <section id="table-half" class="bg-color3" style="padding-top:30px;">
-		<div class="container">
-				<h2 class="title">收集与分析</h2>
-					<p class="sep-bottom">滴雨软件使用日志软件，将所有日志清洗后，做成统一的格式，进行查阅(此模块收费)</p>
-				<div class="row">
-					<div class="col-sm-4"> <a href="log/logstash.html" ><img src="images/log/Logstash.png" class="screen" alt="Logstash"> </a>
-						<h3 class="name">Logstash</h3>
-						<h4 class="occupation">数据流</h4>
-						<p>数据流传输、日志结构化1<br>&nbsp;</p>
-						<ul class="soc-list">
-							<li><<a th:href="${elk.logstashUrl}" >界面</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-4"><a th:href="${elk.elasticUrl}" > <img src="images/log/elasticsearch.png" class="screen" alt="elasticsearch"> </a>
-						<h3 class="name">Elasticsearch</h3>
-						<h4 class="occupation">搜索</h4>
-						<p>实时分析、实时检索、海量存储1<br>
-							建立索引，以便日后快速查看、搜索、分析</p>
-						<ul class="soc-list">
-								<li><a th:href="${elk.elasticUrl}" >界面</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-4"> <a th:href="${elk.kibanaUrl}" ><img src="images/log/kibana.png" class="screen" alt="kibana" > </a>
-						<h3 class="name">Kibana</h3>
-						<h4 class="occupation">统计</h4>
-						<p>分析统计、酷炫图表1<br>&nbsp;</p>
-						<ul class="soc-list">
-							<li><a th:href="${elk.kibanaUrl}" >界面</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
+   <section id="content-3col"  class="bg-color3" style="padding-top:40px;padding-bottom:20px;">
+	   <div class="container" >
+		   <h2 class="title" style="margin-bottom: 40px">日志汇总分析系统</h2>
+		   <div class="container quote" style="margin-bottom: 20px;text-align:center; ">
+			   <img src="images/log/elk.png" alt="elk" >
+		   </div>
+		   <div class="row">
+			   <div class="col-md-2">
+			   </div>
+			   <div class="col-md-2">
+				   <h3 class="name"><a th:href="${elk.logstashUrl}" >Logstash</a></h3>
+			   </div>
+			   <div class="col-md-1">
+			   </div>
+			   <div class="col-md-2">
+				   <h3 class="name"><a th:href="${elk.kibanaUrl}"  >Kibana</a></h3>
+			   </div>
+			   <div class="col-md-1">
+			   </div>
+			   <div class="col-md-2">
+				   <h3 class="name"><a th:href="${elk.elasticUrl}" >Elasticsearch</a></h3>
+			   </div>
+			   <div class="col-md-2">
+			   </div>
+		   </div>
+	   </div>
+   </section>
 
-   <section id="video-half-right">
+   <section id="content-3col2"  style="padding-top:40px;padding-bottom:20px;">
+	   <div class="container">
+		   <h2 class="title" style="margin-bottom: 40px">模块级的log</h2>
+		   <div class="row">
+			   <div class="col-md-3"> <img src="images/log/CephSan.jpg" alt="" class="screen"/>
+				   <a href="log/ceph.html"><h4>CEPH集群存储统一平台</h4></a>
+			   </div>
+			   <div class="col-md-3 col-md-offset-1"> <img src="images/log/openstack.jpg" alt="" class="screen"/>
+				   <a href="log/openstack.html"><h4>云计算OPENSTACK技术</h4></a>
+			   </div>
+			   <div class="col-md-3 col-md-offset-1"> <img src="images/log/docker.jpg" alt="" class="screen"/>
+				   <a href="log/k8docker.html"><h4>云计算DOCKER技术</h4></a>
+			   </div>
+		   </div>
+		   <div class="row">
+			   <div class="col-md-3"> <img src="images/log/spark.jpg" alt="" class="screen"/>
+				   <a href="log/spark.html"><h4>大数据计算框架</h4></a>
+			   </div>
+			   <div class="col-md-3 col-md-offset-1"> <img src="images/log/yarn.jpg" alt="" class="screen"/>
+				   <a href="log/hadoop.html"><h4>大数据调度框架</h4></a>
+			   </div>
+			   <div class="col-md-3 col-md-offset-1"> <img src="images/log/zookeeper.jpg" alt="" class="screen"/>
+				   <a href="log/zookeeper.html"><h4>大数据分布式协同框架</h4></a>
+			   </div>
+		   </div>
+		   <div class="row">
+			   <div class="col-md-3"> <img src="images/log/ambari.jpg" alt="" class="screen"/>
+				   <a href="log/ambari.html"><h4>大数据监控与管理框架</h4></a>
+			   </div>
+			   <div class="col-md-3 col-md-offset-1"> <img src="images/log/hbase.jpg" alt="" class="screen"/>
+				   <a href="log/hbase.html"><h4>列式数据库</h4></a>
+			   </div>
+			   <div class="col-md-3 col-md-offset-1"> <img src="images/log/hive.jpg" alt="" class="screen"/>
+				   <a href="log/hive.html"><h4>大数据数据仓库</h4></a>
+			   </div>
+		   </div>
+		   <div class="row">
+			   <div class="col-md-3"> <img src="images/log/azkaban.jpg" alt="" class="screen"/>
+				   <a href="log/azkaban.html"><h4>大数据任务调度</h4></a>
+			   </div>
+			   <div class="col-md-3 col-md-offset-1"> <img src="images/log/kafak.jpg" alt="" class="screen"/>
+				   <a href="log/kafak.html"><h4>kafak</h4></a>
+			   </div>
+			   <div class="col-md-3 col-md-offset-1"> <img src="images/log/mahout.jpg" alt="" class="screen"/>
+				   <a href="log/mahout.html"><h4>大数据展示</h4></a>
+			   </div>
+		   </div>
+	   </div>
+   </section>
+
+   <section id="video-half-right" class="bg-color3" >
 		    <div class="container">
 		      <div class="row">
 		        <div class="col-md-5 editContent">

@@ -7,10 +7,16 @@ modeulelist:
   target: _self
   demoUrl: http://microraindrop.com/diyudemo/
   elk:
-    logstashUrl:
-    elasticUrl:
-    kibanaUrl:
+    logstashUrl: log/Kibana/Kibana_Monitoring.html
+    elasticUrl: log/Cerebro/Cerebro_overview.html
+    kibanaUrl:  log/Kibana/Kibana_Discover.html
   modeuls:
+    - moduleId: web3
+      moduleName: web 3.0 应用
+      menus:
+        - menuid: ipfs
+          menuname: ipfs
+          Url: ipfs/IPFSstatus.html
     - moduleId: Setup
       moduleName: 安装
       menus:
@@ -106,10 +112,10 @@ modeulelist:
       menus:
         - menuid: LogMgr
           menuname: 日志汇总
-          Url: logmgr.html
+          Url: ./elkList
         - menuid: LogMonitor
           menuname: 日志监控
-          Url: logadv.html
+          Url: ./monitorList
     - moduleId: Backup
       moduleName: 容灾备份
       menus:

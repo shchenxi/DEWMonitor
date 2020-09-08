@@ -19,4 +19,12 @@ public class ElkController {
         model.addAttribute("elk", modules.getElk());
         return "logadv";
     }
+
+    @GetMapping("/monitorList")
+    public String monitorList(Model model)
+    {
+        model.addAttribute("elk", modules.getElk());
+        return "redirect:/log/Kibana/Kibana_Monitoring.html";
+    }
+
 }
