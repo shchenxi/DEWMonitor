@@ -7,12 +7,12 @@ modeulelist:
   target: _self
   demoUrl: http://microraindrop.com/diyudemo/
   elk:
-    logstashUrl: log/Kibana/Kibana_Monitoring.html
-    elasticUrl: log/Cerebro/Cerebro_overview.html
-    kibanaUrl:  log/Kibana/Kibana_Discover.html
+    logstashUrl: log/Cerebro/Cerebro_overview.html
+    elasticUrl: log/Kibana/Kibana_Monitoring.html
+    kibanaUrl: log/Kibana/Kibana_Discover.html
   modeuls:
     - moduleId: web3
-      moduleName: web 3.0 应用
+      moduleName: web3.0
       menus:
         - menuid: ipfs
           menuname: ipfs
