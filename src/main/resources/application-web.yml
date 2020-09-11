@@ -18,7 +18,7 @@ modeulelist:
           menuname: ipfs
           Url: ipfs/IPFSstatus.html
     - moduleId: Setup
-      moduleName: 安装
+      moduleName: 安装与设置
       menus:
         - menuid: SetupMgr
           menuname:
@@ -26,21 +26,24 @@ modeulelist:
     - moduleId: Help
       moduleName: 帮助
       menus:
-        - menuid: HelpFun
-          menuname: 平台系统功能图
-          Url: helpfunction.html
         - menuid: HelpApplication
           menuname: 综合应用示意图
           Url: helpapplication.html
         - menuid: HelpFramework
           menuname: 软件架构示意图
           Url: helpframework.html
-    - moduleId: ClientDownload
-      moduleName: 下载
-      menus:
         - menuid: ClientDownloadMgr
-          menuname:
+          menuname: 下载
           Url: download.html
+    - moduleId: cloudsecurity
+      moduleName: 下一代云安全方案
+      menus:
+        - menuid: SDN
+          menuname: 软件定义网络
+          Url: sdn.html
+        - menuid: snwan
+          menuname: 软件定义广域网
+          Url: sdwan.html
     - moduleId: CloudComputing
       moduleName: 云计算
       menus:
@@ -108,7 +111,7 @@ modeulelist:
           menuname: 人工智能监控平台
           Url: aimonitor.html
     - moduleId: Log
-      moduleName: 日志
+      moduleName: 日志汇总监控
       menus:
         - menuid: LogMgr
           menuname: 日志汇总

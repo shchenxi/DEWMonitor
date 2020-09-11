@@ -12,7 +12,7 @@ modeulelist:
     kibanaUrl: http://192.168.1.24:5601/
   modeuls:
       - moduleId: Setup
-        moduleName: 安装
+        moduleName: 安装与设置
         menus:
           - menuid: SetupMgr
             menuname:
@@ -29,12 +29,15 @@ modeulelist:
           - menuid: HelpFramework
             menuname: 软件架构示意图
             Url: helpframework.html
-      - moduleId: ClientDownload
-        moduleName: 下载
+      - moduleId: cloudsecurity
+        moduleName: 云安全方案
         menus:
-          - menuid: ClientDownloadMgr
-            menuname:
-            Url: download.html
+          - menuid: SDN
+            menuname: 软件定义网络
+            Url: sdn.html
+          - menuid: snwan
+            menuname: 软件定义广域网
+            Url: sdwann.html
       - moduleId: CloudComputing
         moduleName: 云计算
         menus:
@@ -115,7 +118,7 @@ modeulelist:
             menuname: 人工智能监控平台
             Url: aimonitor.html
       - moduleId: Log
-        moduleName: 日志
+        moduleName: 日志汇总监控
         menus:
           - menuid: LogMgr
             menuname: 日志汇总
