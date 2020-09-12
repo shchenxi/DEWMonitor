@@ -33,7 +33,7 @@ modeulelist:
           menuname: 软件架构示意图
           Url: helpframework.html
         - menuid: ClientDownloadMgr
-          menuname: 下载
+          menuname: 客户端下载
           Url: download.html
     - moduleId: cloudsecurity
       moduleName: 下一代云安全方案
