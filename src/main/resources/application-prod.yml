@@ -5,7 +5,7 @@ server:
 
 modeulelist:
   target: _blank
-  demoUrl: http://192.168.1.10:8088/diyudemo
+  demoUrl: http://192.168.1.27:8088/diyudemo
   elk:
     logstashUrl: http://192.168.1.24:5601/app/monitoring#/overview?_g=(cluster_uuid:_AMc6mTdQ2eAYye8oLF79Q)
     elasticUrl: http://192.168.1.23:9000/#/overview?host=http:%2F%2F192.168.1.23:9200
@@ -44,98 +44,100 @@ modeulelist:
         - menuid: snwan
           menuname: 软件定义广域网
           Url: sdwan.html
-        menus:
-          -  menuid: CloudComputingMgr
-             menuname: 云计算管理平台
-             Url: openstack.html
-             extLink: http://192.168.1.23/dashboard/
-             autoJmp: true
-          -  menuid: CloudComputingMonitor
-             menuname: 云计算监控平台
-             Url: http://192.168.1.24:3000/d/gBqMwDTiz/openstack-clouds?orgId=1
-      - moduleId: CloudStorage
-        moduleName: 云存储
-        menus:
-          - menuid: CloudStorageMgr
-            menuname: 云存储管理平台
-            Url: ceph.html
-            extLink: http://192.168.1.25/openattic
-            autoJmp: true
-          - menuid: CloudStorageMonitor
-            menuname: 云存储监控平台
-            Url: http://192.168.1.25:3000/d/vwcB0Bzmk/ceph-cluster?orgId=1
-          - menuid: CloudStorageMonitor
-            menuname: 服务器监控平台
-            Url: http://192.168.1.25:3000/d/9CWBz0bik/1-node-exporter-for-prometheus-dashboard-zhong-wen-ban-update-1102?orgId=1
-      - moduleId: MicroSvc
-        moduleName: 微服务
-        menus:
-          - menuid: MicroSvcMgr
-            menuname: 微服务管理平台
-            Url: kubernetes/KubernetesDashboardoverview.html
-            extLink: https://192.168.1.28:30000/
-            autoJmp: true
-          - menuid: MicroSvcMonitor
-            menuname: 微服务监控平台
-            Url: http://192.168.1.28:32171/dashboard/db/kubernetes-cluster-monitoring-via-prometheus?refresh=10s&orgId=1
-      - moduleId: BigDate
-        moduleName: 大数据
-        menus:
-          - menuid: BigDateMgr
-            menuname: 大数据管理平台
-            Url: ambari/Ambarilogin.html
-            extLink: http://192.168.1.20:8080/
-            autoJmp: true
-          - menuid: BigDateMonitor
-            menuname: 大数据监控平台
-            extLink: http://192.168.1.20:8080/
-      - moduleId: Hyperledger
-        moduleName: 区块链
-        menus:
-          - menuid: HyperledgerMgr
-            menuname: 区块链管理平台
-            Url: hyperledger.html
-            extLink: http://192.168.1.26:8090
-            autoJmp: true
-          - menuid: HyperledgerMonitor
-            menuname: 区块链监控平台
-            Url: hyperledgerMonitor.html
-      - moduleId: IOT
-        moduleName: 物联网
-        menus:
-          - menuid: IOTMgr
-            menuname: 物联网管理平台
-            Url: thingsboard/ThingsBoardlogin.html
-            extLink: http://192.168.1.28/
-            autoJmp: true
-          - menuid: IOTMonitor
-            menuname: 物联网监控平台
-            Url: thingsboard/ThingsBoardwidgets-bundles.html
-            extLink: http://192.168.1.28/
-      - moduleId: AI
-        moduleName: 人工智能
-        menus:
-          - menuid: AIMgr
-            menuname: 人工智能管理平台
-            Url: ai.html
-          - menuid: IOTMonitor
-            menuname: 人工智能监控平台
-            Url: aimonitor.html
-      - moduleId: Log
-        moduleName: 日志汇总监控
-        menus:
-          - menuid: LogMgr
-            menuname: 日志汇总
-            Url: logmgr.html
-          - menuid: LogMonitor
-            menuname: 日志监控
-            Url: ./elkList
-      - moduleId: Backup
-        moduleName: 容灾备份
-        menus:
-          - menuid: BackupMgr
-            menuname: 容灾备份管理
-            Url: backup/backup.html
-          - menuid: BackupMonitor
-            menuname: 容灾备份监控
-            Url: backup/status.html
+    - moduleId: CloudComputing
+      moduleName: 云计算
+      menus:
+        -  menuid: CloudComputingMgr
+           menuname: 云计算管理平台
+           Url: openstack.html
+           extLink: http://192.168.1.23/dashboard/
+           autoJmp: true
+        -  menuid: CloudComputingMonitor
+           menuname: 云计算监控平台
+           Url: http://192.168.1.24:3000/d/gBqMwDTiz/openstack-clouds?orgId=1
+    - moduleId: CloudStorage
+      moduleName: 云存储
+      menus:
+        - menuid: CloudStorageMgr
+          menuname: 云存储管理平台
+          Url: ceph.html
+          extLink: http://192.168.1.25/openattic
+          autoJmp: true
+        - menuid: CloudStorageMonitor
+          menuname: 云存储监控平台
+          Url: http://192.168.1.25:3000/d/vwcB0Bzmk/ceph-cluster?orgId=1
+        - menuid: CloudStorageMonitor
+          menuname: 服务器监控平台
+          Url: http://192.168.1.25:3000/d/9CWBz0bik/1-node-exporter-for-prometheus-dashboard-zhong-wen-ban-update-1102?orgId=1
+    - moduleId: MicroSvc
+      moduleName: 微服务
+      menus:
+        - menuid: MicroSvcMgr
+          menuname: 微服务管理平台
+          Url: kubernetes/KubernetesDashboardoverview.html
+          extLink: https://192.168.1.28:30000/
+          autoJmp: true
+        - menuid: MicroSvcMonitor
+          menuname: 微服务监控平台
+          Url: http://192.168.1.28:32171/dashboard/db/kubernetes-cluster-monitoring-via-prometheus?refresh=10s&orgId=1
+    - moduleId: BigDate
+      moduleName: 大数据
+      menus:
+        - menuid: BigDateMgr
+          menuname: 大数据管理平台
+          Url: ambari/Ambarilogin.html
+          extLink: http://192.168.1.20:8080/
+          autoJmp: true
+        - menuid: BigDateMonitor
+          menuname: 大数据监控平台
+          extLink: http://192.168.1.20:8080/
+    - moduleId: Hyperledger
+      moduleName: 区块链
+      menus:
+        - menuid: HyperledgerMgr
+          menuname: 区块链管理平台
+          Url: hyperledger.html
+          extLink: http://192.168.1.26:8090
+          autoJmp: true
+        - menuid: HyperledgerMonitor
+          menuname: 区块链监控平台
+          Url: hyperledgerMonitor.html
+    - moduleId: IOT
+      moduleName: 物联网
+      menus:
+        - menuid: IOTMgr
+          menuname: 物联网管理平台
+          Url: thingsboard/ThingsBoardlogin.html
+          extLink: http://192.168.1.28/
+          autoJmp: true
+        - menuid: IOTMonitor
+          menuname: 物联网监控平台
+          Url: thingsboard/ThingsBoardwidgets-bundles.html
+          extLink: http://192.168.1.28/
+    - moduleId: AI
+      moduleName: 人工智能
+      menus:
+        - menuid: AIMgr
+          menuname: 人工智能管理平台
+          Url: ai.html
+        - menuid: IOTMonitor
+          menuname: 人工智能监控平台
+          Url: aimonitor.html
+    - moduleId: Log
+      moduleName: 日志汇总监控
+      menus:
+        - menuid: LogMgr
+          menuname: 日志汇总
+          Url: ./elkList
+        - menuid: LogMonitor
+          menuname: 日志监控
+          Url: ./monitorList
+    - moduleId: Backup
+      moduleName: 容灾备份
+      menus:
+        - menuid: BackupMgr
+          menuname: 容灾备份管理
+          Url: backup/backup.html
+        - menuid: BackupMonitor
+          menuname: 容灾备份监控
+          Url: backup/status.html
