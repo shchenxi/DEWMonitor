@@ -46,17 +46,72 @@
     </dependencies>
 
     <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-            </resource>
-        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <executable>true</executable>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <!--将插件绑定在某个phase执行-->
+                <executions>
+                    <execution>
+                        <id>build-image</id>
+                        <!--用户只需执行mvn package ，就会自动执行mvn docker:build-->
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <configuration>
+
+                    <!--指定生成的镜像名-->
+                    <imageName>dewmonitor</imageName>
+                    <!--指定标签-->
+                    <imageTags>
+                        <imageTag>latest</imageTag>
+                    </imageTags>
+
+                    <workdir>/opt/diyu</workdir>
+
+                    <!--用于指定基础镜像，相当于Dockerfile中的FROM指令-->
+                    <baseImage>java:openjdk-8-jre-alpine</baseImage>
+
+                    <cmd>["java", "-version"]</cmd>
+
+                    <!--相当于Dockerfile的ENTRYPOINT指令-->
+                    <entryPoint>["java", "-jar", "${project.build.finalName}.jar"]</entryPoint>
+
+                    <!--指定远程 docker api地址-->
+                    <dockerHost>http://192.168.1.80:2375</dockerHost>
+
+                    <!-- 这里是复制 jar 包到 docker 容器指定目录配置 -->
+                    <resources>
+                        <resource>
+                            <targetPath>/opt/diyu</targetPath>
+                            <!--jar 包所在的路径 此处配置的 即对应 target 目录-->
+                            <directory>${project.build.directory}</directory>
+                            <!-- 需要包含的 jar包 ，这里对应的是 Dockerfile中添加的文件名 -->
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+
+                        <resource>
+                            <targetPath>/opt/diyu</targetPath>
+                            <!--jar 包所在的路径 此处配置的 即对应 target 目录-->
+                            <directory>${project.build.outputDirectory}</directory>
+                            <!-- 需要包含的 jar包 ，这里对应的是 Dockerfile中添加的文件名 -->
+                            <include>*.yml</include>
+                        </resource>
+
+                    </resources>
                 </configuration>
             </plugin>
         </plugins>
