@@ -32,8 +32,11 @@ modeulelist:
         - menuid: HelpFramework
           menuname: 软件架构示意图
           Url: helpframework.html
+    - moduleId: Download
+      moduleName: 下载
+      menus:
         - menuid: ClientDownloadMgr
-          menuname: 客户端下载
+          menuname: 软件下载
           Url: download.html
     - moduleId: cloudsecurity
       moduleName: 下一代云安全方案
