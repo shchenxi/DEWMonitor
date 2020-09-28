@@ -42,11 +42,8 @@ modeulelist:
       moduleName: 下一代云安全方案
       menus:
         - menuid: SDN
-          menuname: 软件定义网络
+          menuname: 解决方案
           Url: sdn.html
-        - menuid: snwan
-          menuname: 软件定义广域网
-          Url: sdwan.html
     - moduleId: CloudComputing
       moduleName: 云计算
       menus:
