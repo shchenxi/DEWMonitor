@@ -38,9 +38,9 @@ modeulelist:
         - menuid: ClientDownloadMgr
           menuname: 软件下载
           Url: download.html
-
     - moduleId: cloudsecurity
       moduleName: 下一代云安全方案
+      defeatUrl: sase.html
       menus:
         - menuid: CloudComputingMgr
           menuname: 身份识别与访问管理

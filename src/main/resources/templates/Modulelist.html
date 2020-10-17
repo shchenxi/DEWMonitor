@@ -121,7 +121,13 @@
                             <h4>滴雨科技-<span th:text="${module.moduleName}"/></h4>
                         </ul>
                     </div>
+
+                    <div th:switch="${module.isdefeatUrl}">
+                        <p th:case="true" hidden th:id="isdefeatUrl" >ok</p>
+                    </div>
+
                 </div>
+
                 <div class="col-md-5 text-left">
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
@@ -151,7 +157,7 @@
 
 <section class="services-area" style="padding-top:60px;">
     <div>
-        <iframe id="content" name="content" height="1080px" width="100%" left="0" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="yes"   th:src="${module.menus[0].url}"  ></iframe>
+        <iframe id="content" name="content" height="1080px" width="100%" left="0" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="yes"   th:src="${module.defeatUrl}"  ></iframe>
     </div>
 </section>
 </body>
@@ -162,14 +168,19 @@
 
 
     var t
-
-    $(".navbar-nav>li:first").children("div").children("p").children("a").children("span").attr({'class':'boxselect'});
+    var isdefeatUrl=$("#isdefeatUrl").text();
+    if(isdefeatUrl == '')
+    {
+        $(".navbar-nav>li:first").children("div").children("p").children("a").children("span").attr({'class':'boxselect'});
+    }
 
     $('.navbar-nav>li').click(function(){
         $('.navbar-nav>li').each(function(key,val){
             $(val).children("div").children("p").children("a").children("span").attr({'class':'box'});
         })
+
         $(this).children("div").children("p").children("a").children("span").attr({'class':'boxselect'});
+
         if(t != null)
         {
             clearTimeout(t)

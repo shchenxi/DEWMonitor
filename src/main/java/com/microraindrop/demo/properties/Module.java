@@ -26,6 +26,39 @@ public class Module {
         this.moduleId = moduleId;
     }
 
+    public String getDefeatUrl() {
+        if ( defeatUrl != null && !"".equals(defeatUrl)  ) {
+            return defeatUrl;
+        }
+        else
+        {
+            if (menus.size() > 0)
+            {
+                return menus.get(0).getUrl();
+            }
+            else
+            {
+                return "";
+            }
+        }
+    }
+
+    public void setDefeatUrl(String defeatUrl) {
+        this.defeatUrl = defeatUrl;
+    }
+
+    public Boolean getIsdefeatUrl() {
+        if ( defeatUrl != null && !"".equals(defeatUrl)   ) {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+
+    private String defeatUrl;
     private List<Menu> menus;
     private String moduleId;
     private String moduleName;
