@@ -15,8 +15,11 @@ modeulelist:
       moduleName: web3.0
       menus:
         - menuid: ipfs
-          menuname: ipfs
+          menuname: 滴雨科技局域网区块链文件共享系统
           Url: ipfs/IPFSstatus.html
+        - menuid: ipfsdownload
+          menuname: 软件下载使用
+          Url: ipfs/download.html
     - moduleId: Setup
       moduleName: 安装与设置
       menus:
@@ -43,11 +46,11 @@ modeulelist:
       defeatUrl: sase.html
       menus:
         - menuid: CloudComputingMgr
-          menuname: 身份识别与访问管理
-          Url: iam/IAM_Login.html
-        - menuid: SDN
-          menuname: 解决方案
+          menuname: Network on SASE
           Url: sdn.html
+        - menuid: SDN
+          menuname: Security on SASE
+          Url: iam/IAM_Login.html
     - moduleId: CloudComputing
       moduleName: 云计算
       menus:

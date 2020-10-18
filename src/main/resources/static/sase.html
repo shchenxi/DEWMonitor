@@ -7,19 +7,43 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="js/jquery.maphilight.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/iconfont-style.css" rel="stylesheet" />
 </head>
 <body>
 
-<section style="padding-top:100px;padding-bottom:0px;">
-    <div style="text-align: center">
-        <p><img src="images/SASE.jpg"  usemap="#simple"   >
-            <map name="simple">
-                <area href="./iam/IAM_Login.html" shape="poly" coords="300,12,335,50,300,85,300,315,270,350,300,390,100,390,100,12"   title="network">
-                <area href="./sdn.html" shape="poly" coords="300,12,335,50,300,85,300,315,270,350,300,390,520,390,520,12"   title="security"/>
-            </map>
-        </p>
+<nav class="navbar bg-color3 navbar-fixed-top" style="padding-top:100px;padding-bottom:0px;">
+    <div class="container-fluid">
+        <div class="row no-dev">
+            <div class="collapse navbar-collapse navMenuCollapse">
+                <div class="col-md-4">
+                    <div class="collapse navbar-collapse navMenuCollapse">
+                        <a href="./sdn.html"><img src="images/sase_opnsernse.png"  style="width: 600px;height: 400px"></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="collapse navbar-collapse navMenuCollapse">
+                        <p><img src="images/SASE.jpg"  usemap="#simple"   >
+                            <map name="simple">
+                                <area href="./sdn.html" shape="poly" coords="300,12,335,50,300,85,300,315,270,350,300,390,100,390,100,12"   title="network">
+                                <area href="./iam/IAM_Login.html" shape="poly" coords="300,12,335,50,300,85,300,315,270,350,300,390,520,390,520,12"   title="security"/>
+                            </map>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-left">
+                    <div class="collapse navbar-collapse">
+                        <a href="./iam/IAM_Login.html"><img src="images/sase_security.png" style="width: 600px;height: 400px" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+</nav>
+
 </body>
 </html>
 
