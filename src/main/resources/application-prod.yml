@@ -45,10 +45,10 @@ modeulelist:
       moduleName: 下一代云安全方案
       defeatUrl: sase.html
       menus:
-        - menuid: CloudComputingMgr
+        - menuid: Network
           menuname: Network on SASE
-          Url: sdn.html
-        - menuid: SDN
+          Url: network/Login.html
+        - menuid: Security
           menuname: Security on SASE
           Url: iam/IAM_Login.html
     - moduleId: CloudComputing
