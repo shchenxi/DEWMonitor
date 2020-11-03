@@ -65,13 +65,13 @@ modeulelist:
       menus:
         - menuid: CloudStorageMgr
           menuname: 云存储管理平台
-          Url: ceph/openATTIClogin.html
+          Url: fs/openATTIClogin.html
         - menuid: CloudStorageMonitor
           menuname: 云存储监控平台
-          Url: ceph/CephClusterGrafana.html
+          Url: fs/CephClusterGrafana.html
         - menuid: CloudStorageMonitor
           menuname: 服务器监控平台
-          Url: ceph/NodeExporterDashboard.html
+          Url: fs/NodeExporterDashboard.html
     - moduleId: MicroSvc
       moduleName: 微服务
       menus:

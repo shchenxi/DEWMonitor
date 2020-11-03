@@ -132,7 +132,7 @@
  <div class=row ng-class="{'full-height':loginActive()}">
  <div class=col-md-12 ng-class="{'full-height':loginActive()}">
  
- <ol class="breadcrumb ng-isolate-scope" ncy-breadcrumb ng-hide=loginActive()><li ng-repeat="step in steps" ng-class="{active: $last}" ng-switch="$last || !!step.abstract" class="ng-scope active"><span ng-switch-when=true class="ng-binding ng-scope">Ceph Pools</span></ol>
+ <ol class="breadcrumb ng-isolate-scope" ncy-breadcrumb ng-hide=loginActive()><li ng-repeat="step in steps" ng-class="{active: $last}" ng-switch="$last || !!step.abstract" class="ng-scope active"><span ng-switch-when=true class="ng-binding ng-scope">Pools</span></ol>
  
  
  <div ui-view=main ng-class="{'full-height':loginActive()}" class=ng-scope><ceph-pools-list class="ng-scope ng-isolate-scope"><oa-ceph-cluster-loader on-cluster-load=$ctrl.onClusterLoad(cluster) class=ng-isolate-scope>
