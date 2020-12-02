@@ -38,4 +38,9 @@ public class WebController {
         return new ModelAndView(new RedirectView(modules.getDemoUrl()));
     }
 
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "修改于2020-12-02 12:27" ;
+    }
 }
