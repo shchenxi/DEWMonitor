@@ -4,4 +4,4 @@ VOLUME /tmp
 COPY *.jar /opt/diyu/
 copy *.yml /opt/diyu/
 EXPOSE 8080
-ENTRYPOINT java -jar *.jar -Dspring.profiles.active=prod
+ENTRYPOINT java -jar -Dspring.profiles.active=prod *.jar
